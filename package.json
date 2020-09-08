@@ -15,6 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "prettify": "prettier --write",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -34,6 +35,18 @@
     ]
   },
   "devDependencies": {
+    "husky": "^4.3.0",
+    "lint-staged": "^10.3.0",
     "prettier": "2.1.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx,css}": [
+      "npm run prettify"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
