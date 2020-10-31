@@ -1,11 +1,9 @@
 import React from 'react';
+//pages
+import Landing from './pages/Landing';
 
 function App() {
-	return (
-		<div className="App">
-			<h1>world</h1>
-		</div>
-	);
+	return <Landing />;
 }
 
 export default App;
