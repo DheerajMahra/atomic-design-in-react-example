@@ -7,9 +7,7 @@ import Menu from '../components/organisms/Menu';
 function Landing() {
 	return (
 		<Center>
-			{/* <Header /> */}
 			<Menu />
-			{/* <Footer /> */}
 		</Center>
 	);
 }
