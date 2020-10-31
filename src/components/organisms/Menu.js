@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-//organisms
+//molecules
 import FoodItem from '../molecules/FoodItem';
 
 const items = [
